@@ -6,6 +6,12 @@ Green: #00B172
 White: #FFF
 
 */
+
+:root {
+  --main-color: #1a1a1a
+  --green: #00B172
+}
+
 div {
   border: 2px;
 }
@@ -64,4 +70,31 @@ nav li {
 } */
 /* .main-healder {
   border-color: #00b171;
-} */
+}*/
+
+.description{
+  background-color: var(--green);
+}
+
+.mobile-app {
+  background-color: var(--green);
+  height: 90vh;
+  color: white;
+  font-family: sans-serif;
+  padding: 2rem;
+} & h2 {
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
+}
+.description {
+  display: flex;
+  flex-direction: column;
+}
+.mobile-app-wrapper {
+  display: flex;
+  justify-content: space-between;
+  >*{
+    flex: 1;
+  }
+}
+
